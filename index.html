@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            text-align: center;
+        }
+        h1{
+            font-weight: bold;
+            color: steelblue;
+            font-size: 5rem;
+        }
+        h2{
+            color: palevioletred;
+        }
+
+        nav {
+            margin: 0 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: aqua;
+        }
+
+        nav a {
+            padding: 10px;
+        }
+
+        img {
+            height: 50px;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: url("/images/resturant8.jpg");
+            background-size: 100%;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            height: 90vh;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 30px;
+            /* position: absolute;
+            bottom: 0; */
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            main {
+                background: url("/images/resturant11.jpg");
+                background-size: 100%;
+                object-fit: cover;
+                background-repeat: no-repeat;
+                text-align: center;
+                height: 90vh;
+                color:white;
+                display: flex;
+                justify-content: flex-start;
+                padding-top: 40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Hy">
+        <nav>
+            <img src="/images/allu.jpg" alt="Error">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="location.html">Contact</a>
+            <a href="menu.html">Menu</a>
+            <a href="login.html">Sign In</a>
+            <a href="register.html">Sign Up</a>
+        </nav>
+        <main>
+            <h1><em>Ronyresturant</em></h1>
+        
+            <h2>20% Off on this week</h2>
+            <p> 20% off on every purchase + 10% instant cashback </p>
+            <h2>Our Mission</h2>
+            <p>Serve Food Serve Love</p>
+            <h2>Blog</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+               Labore necessitatibus soluta unde reprehenderit non quis 
+               pariatur quidem voluptates aliquid earum neque praesentium 
+               error quod quaerat consequatur expedita delectus, laboriosam hic. 
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+               Tempora quidem quod corrupti blanditiis exercitationem molestias quos, 
+               hic sint cum! Tenetur deserunt veniam veritatis suscipit optio quas 
+               aspernatur reprehenderit dicta reiciendis.</p>
+        </main>
+        <div class="footer">
+            <p> © Ronyresturant</p>
+        </div>
+    </div>
+</body>
+
+</html>

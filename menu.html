@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Menu</title>
+
+                <!-- This block is for style part -->
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        /* Set display to none for image */
+       
+        #image, #image1,  #image2,  #image3,  #image4,  #image5,
+        #image6,  #image7, #image8,
+        #image9,  #image10,  #image11, #image12,  #image13,  #image14,
+        #image15,  #image16,  #image17,  #image18,
+        #image19 {
+            display: none;
+        }
+        h1{
+            /* text-align: center; */
+            text-decoration: underline;
+            color: rebeccapurple;
+        }
+        nav {
+            margin: 0 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: aqua;
+        }
+        nav a{
+            padding: 10px;
+        }
+
+        .main {
+            background-color: orange;
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 10px;
+        }
+
+        #inner-box {
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+        #inner-box button{
+           display: none;
+
+        }
+
+        .box {
+            border: 5px black solid;
+            border-radius: 15px;
+            padding: 80px;
+            background-color: peachpuff;
+        }
+
+        .main img {
+            max-width: 180px;
+        }
+
+        button {
+            background-color: teal;
+            margin-top: 10px;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        #btn {
+            background-color: white;
+            color: black;
+            font-size: 1rem;
+        }
+
+        #footer-image {
+            height: 350px;
+            width: 100%;
+            object-fit: cover;
+            background-repeat: no-repeat
+        }
+
+        #btn1,
+        #btn2,
+        #btn3,
+        #btn4,
+        #btn5,
+        #btn6,
+        #btn7,
+        #btn8,
+        #btn9,
+        #btn10,
+        #btn11, #btn12,
+        #btn13,#btn14,#btn15,#btn16 {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 900px) {
+            .box {
+                padding: 50px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: brown;
+            }
+
+            .box {
+                padding: 50px;
+                margin-bottom: 20px;
+            }
+
+            .main {
+                display: flex;
+                flex-direction: column;
+                margin: 10%;
+                justify-content: space-around;
+                padding-bottom: 10px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="location.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Sign In</a>
+    </nav>
+    <h1>Menu</h1>
+
+                  <!-- This block is for Stater  part -->
+
+    <div class="main">
+        <div class="box">
+            <button id="btn" onclick="showButtons()">Starter</button>
+            <div id="inner-box">
+                <div>
+                    <img id="image8" src="/images/salad.webp" alt="error">
+                </div>
+                <button type="button" id="btn1" onclick="showi0()" id="btnID8">Salad</button>
+
+                <div>
+                    <img id="image9" src="/images/lemon.jpg" alt="error">
+                </div>
+                <button type="button" id="btn2" onclick=" showi1()" id="btnID9">lemon Juice</button>
+                <div>
+                    <img id="image10" src="/images/papad.jpg" alt="error">
+                </div>
+                <button type="button" id="btn3" onclick="showi2()" id="btnID10">Roasted Papad</button>
+                <div>
+                    <img id="image11" src="/images/halwa.jpg" alt="error">
+                </div>
+                <button type="button" id="btn4" onclick="showi3()" id="btnID11">Halwa</button>
+                <div>
+                    <img id="image12" src="/images/bread.jpg" alt="error">
+                </div>
+                <button type="button" id="btn5" onclick="showi4()" id="btnID12">Bread</button>
+                <div>
+                    <img id="image13" src="/images/dal.jpg" alt="error">
+                </div>
+                <button type="button" id="btn6" onclick="showi5()" id="btnID13">Dal Fry</button>
+                <div>
+                    <img id="image14" src="/images/allu.jpg" alt="error">
+                </div>
+                <button type="button" id="btn7" onclick="showi6()" id="btnID14">Allu Fry</button>
+                <div>
+                    <img id="image15" src="/images/colddrink.jpg" alt="error">
+                </div>
+                <button type="button" id="btn8" onclick="showi7()" id="btnID15">Cold Drinks</button>
+            </div>
+        </div>
+
+                    <!-- This block is for Meal  part -->
+
+        <div class="box"><button id="btn" onclick="showButtons1()">Meal</button>
+
+            <div id="inner-box">
+                <div class="hii">
+                    <div>
+                        <img id="image" src="/images/fish.jpg" alt="error">
+                    </div>
+
+                    <button type="button" id="btn9" onclick="show()" id="btnID">Fish</button>
+
+
+                    <div>
+                        <img id="image1" src="/images/chicken.jpg" alt="error">
+                    </div>
+
+                    <button type="button" id="btn10" onclick="show1()" id="btnID1">Chicken</button>
+
+                    <div>
+                        <img id="image2" src="/images/mutton.jpg" alt="error">
+                    </div>
+                    <button type="button" id="btn11" onclick="show2()" id="btnID2">Mutton</button>
+
+                    <div>
+                        <img id="image3" src="/images/rice.webp" alt="error">
+                    </div>
+                    <button type="button" id="btn12" onclick="show3()" id="btnID3">Rice</button>
+
+                    <div>
+                        <img id="image4" src="/images/curry.jpg" alt="error">
+                    </div>
+                    <button type="button" id="btn13" onclick="show4()" id="btnID4">Curry</button>
+
+                    <div>
+                        <img id="image5" src="/images/dal.jpg" alt="error">
+                    </div>
+                    <button type="button" id="btn14" onclick="show5()" id="btnID5">Dal</button>
+
+                    <div>
+                        <img id="image6" src="/images/papad.jpg" alt="error">
+                    </div>
+                    <button type="button" id="btn15" onclick="show6()" id="btnID6">Papad</button>
+
+                    <div>
+                        <img id="image7" src="/images/allu.jpg" alt="error">
+                    </div>
+                    <button type="button" id="btn16" onclick="show7()" id="btnID7">Fry</button>
+                </div>
+            </div>
+        </div>
+
+                      <!-- This block is for Sweet part -->
+
+        <div class="box"><button id="btn" onclick="showButtons2()">Sweets</button>
+            <div id="inner-box">
+                <div>
+                    <img id="image16" src="/images/icecream.jpg" alt="error">
+                </div>
+                <button type="button" id="btn17" onclick="showo0()" id="btnID16">Ice Cream</button>
+                <div>
+                    <img id="image17" src="/images/rosugulla.jpg" alt="error">
+                </div>
+                <button type="button" id="btn18" onclick="showo1()" id="btnID17">Rasugula</button>
+                <div>
+                    <img id="image18" src="/images/blackberrysweet.jpg" alt="error">
+                </div>
+                <button type="button" id="btn19" onclick="showo2()" id="btnID18">BlackBerry Special</button>
+                <div>
+                    <img id="image19" src="/images/colddrink.jpg" alt="error">
+                </div>
+                <button type="button" id="btn20" onclick="showo3()" id="btnID19" >Drinks</button>
+            </div>
+        </div>
+   </div>
+
+                       <!-- This block is for Footer part -->
+
+    <img id="footer-image" src="/images/resturant7.jpg" />
+    <footer>
+        <p>Copyright © Ronyresturant</p>
+    </footer>
+
+                        <!-- This block is for JAVASCRIPT part -->
+
+    <script>
+        
+            // This block is for stater part 
+
+        const showButtons = () => {
+            document.getElementById("btn1").style.display = "block"
+            document.getElementById("btn2").style.display = "block"
+            document.getElementById("btn3").style.display = "block"
+            document.getElementById("btn4").style.display = "block"
+            document.getElementById("btn5").style.display = "block"
+            document.getElementById("btn6").style.display = "block"
+            document.getElementById("btn7").style.display = "block"
+            document.getElementById("btn8").style.display = "block"
+        }
+        const showi0 = () => {
+            document.getElementById("image8").style.display = "block"
+            document.getElementById("image9").style.display = "none"
+            document.getElementById("image10").style.display = "none"
+            document.getElementById("image11").style.display = "none"
+            document.getElementById("image12").style.display = "none"
+            document.getElementById("image13").style.display = "none"
+            document.getElementById("image14").style.display = "none"
+            document.getElementById("image15").style.display = "none"
+        }
+        const showi1 = () => {
+            document.getElementById("image8").style.display = "none"
+            document.getElementById("image9").style.display = "block"
+            document.getElementById("image10").style.display = "none"
+            document.getElementById("image11").style.display = "none"
+            document.getElementById("image12").style.display = "none"
+            document.getElementById("image13").style.display = "none"
+            document.getElementById("image14").style.display = "none"
+            document.getElementById("image15").style.display = "none"
+        }
+        const showi2 = () => {
+            document.getElementById("image8").style.display = "none"
+            document.getElementById("image9").style.display = "none"
+            document.getElementById("image10").style.display = "block"
+            document.getElementById("image11").style.display = "none"
+            document.getElementById("image12").style.display = "none"
+            document.getElementById("image13").style.display = "none"
+            document.getElementById("image14").style.display = "none"
+            document.getElementById("image15").style.display = "none"
+        }
+        const showi3 = () => {
+            document.getElementById("image8").style.display = "none"
+            document.getElementById("image9").style.display = "none"
+            document.getElementById("image10").style.display = "none"
+            document.getElementById("image11").style.display = "block"
+            document.getElementById("image12").style.display = "none"
+            document.getElementById("image13").style.display = "none"
+            document.getElementById("image14").style.display = "none"
+            document.getElementById("image15").style.display = "none"
+        }
+        const showi4 = () => {
+            document.getElementById("image8").style.display = "none"
+            document.getElementById("image9").style.display = "none"
+            document.getElementById("image10").style.display = "none"
+            document.getElementById("image11").style.display = "none"
+            document.getElementById("image12").style.display = "block"
+            document.getElementById("image13").style.display = "none"
+            document.getElementById("image14").style.display = "none"
+            document.getElementById("image15").style.display = "none"
+        }
+        const showi5 = () => {
+            document.getElementById("image8").style.display = "none"
+            document.getElementById("image9").style.display = "none"
+            document.getElementById("image10").style.display = "none"
+            document.getElementById("image11").style.display = "none"
+            document.getElementById("image12").style.display = "none"
+            document.getElementById("image13").style.display = "block"
+            document.getElementById("image14").style.display = "none"
+            document.getElementById("image15").style.display = "none"
+        }
+        const showi6 = () => {
+            document.getElementById("image8").style.display = "none"
+            document.getElementById("image9").style.display = "none"
+            document.getElementById("image10").style.display = "none"
+            document.getElementById("image11").style.display = "none"
+            document.getElementById("image12").style.display = "none"
+            document.getElementById("image13").style.display = "none"
+            document.getElementById("image14").style.display = "block"
+            document.getElementById("image15").style.display = "none"
+        }
+        const showi7 = () => {
+            document.getElementById("image8").style.display = "none"
+            document.getElementById("image9").style.display = "none"
+            document.getElementById("image10").style.display = "none"
+            document.getElementById("image11").style.display = "none"
+            document.getElementById("image12").style.display = "none"
+            document.getElementById("image13").style.display = "none"
+            document.getElementById("image14").style.display = "none"
+            document.getElementById("image15").style.display = "block"
+        }
+
+             // This block is for Meal  part
+
+        const showButtons1 = () => {
+            document.getElementById("btn9").style.display = "block"
+            document.getElementById("btn10").style.display = "block"
+            document.getElementById("btn11").style.display = "block"
+            document.getElementById("btn12").style.display = "block"
+            document.getElementById("btn13").style.display = "block"
+            document.getElementById("btn14").style.display = "block"
+            document.getElementById("btn15").style.display = "block"
+            document.getElementById("btn16").style.display = "block"
+        }
+
+        const show = () => {
+            document.getElementById("image").style.display = "block"
+            document.getElementById("image1").style.display = "none"
+            document.getElementById("image2").style.display = "none"
+            document.getElementById("image3").style.display = "none" 
+            document.getElementById("image4").style.display = "none"
+            document.getElementById("image5").style.display = "none"  
+            document.getElementById("image6").style.display = "none" 
+            document.getElementById("image7").style.display = "none" 
+        }
+        const show1 = () => {
+            document.getElementById("image1").style.display = "block"
+            document.getElementById("image").style.display = "none"
+            document.getElementById("image2").style.display = "none"
+            document.getElementById("image3").style.display = "none" 
+            document.getElementById("image4").style.display = "none" 
+            document.getElementById("image5").style.display = "none"
+            document.getElementById("image6").style.display = "none"  
+            document.getElementById("image7").style.display = "none" 
+        }
+        const show2 = () => {
+            document.getElementById("image1").style.display = "none"
+            document.getElementById("image").style.display = "none"
+            document.getElementById("image3").style.display = "none" 
+            document.getElementById("image2").style.display = "block"
+            document.getElementById("image4").style.display = "none" 
+            document.getElementById("image5").style.display = "none" 
+            document.getElementById("image6").style.display = "none" 
+            document.getElementById("image7").style.display = "none" 
+        }
+        const show3 = () => {
+            document.getElementById("image1").style.display = "none"
+            document.getElementById("image").style.display = "none"
+            document.getElementById("image2").style.display = "none"
+            document.getElementById("image4").style.display = "none" 
+            document.getElementById("image3").style.display = "block" 
+            document.getElementById("image5").style.display = "none"  
+            document.getElementById("image6").style.display = "none" 
+            document.getElementById("image7").style.display = "none"           
+            
+        }
+        const show4 = () => {
+            document.getElementById("image1").style.display = "none"
+            document.getElementById("image").style.display = "none"
+            document.getElementById("image2").style.display = "none"
+            document.getElementById("image3").style.display = "none" 
+            document.getElementById("image4").style.display = "block"  
+            document.getElementById("image5").style.display = "none" 
+            document.getElementById("image6").style.display = "none" 
+            document.getElementById("image7").style.display = "none"           
+            
+        }
+        const show5 = () => {
+            document.getElementById("image1").style.display = "none"
+            document.getElementById("image").style.display = "none"
+            document.getElementById("image2").style.display = "none"
+            document.getElementById("image3").style.display = "none" 
+            document.getElementById("image4").style.display = "none"  
+            document.getElementById("image5").style.display = "block" 
+            document.getElementById("image6").style.display = "none" 
+            document.getElementById("image7").style.display = "none"           
+            
+        }
+        const show6 = () => {
+            document.getElementById("image1").style.display = "none"
+            document.getElementById("image").style.display = "none"
+            document.getElementById("image2").style.display = "none"
+            document.getElementById("image3").style.display = "none" 
+            document.getElementById("image4").style.display = "none"  
+            document.getElementById("image5").style.display = "none" 
+            document.getElementById("image6").style.display = "block" 
+            document.getElementById("image7").style.display = "none"           
+            
+        }
+        const show7 = () => {
+            document.getElementById("image1").style.display = "none"
+            document.getElementById("image").style.display = "none"
+            document.getElementById("image2").style.display = "none"
+            document.getElementById("image3").style.display = "none" 
+            document.getElementById("image4").style.display = "none"  
+            document.getElementById("image5").style.display = "none" 
+            document.getElementById("image6").style.display = "none" 
+            document.getElementById("image7").style.display = "block"           
+            
+        }
+
+        // This block is for sweet part 
+
+        const showButtons2= () => {
+            document.getElementById("btn17").style.display = "block"
+            document.getElementById("btn18").style.display = "block"
+            document.getElementById("btn19").style.display = "block"
+            document.getElementById("btn20").style.display = "block"
+        }
+
+        const showo0 = () => {
+            document.getElementById("image16").style.display = "block"
+            document.getElementById("image17").style.display = "none"
+            document.getElementById("image18").style.display = "none"
+            document.getElementById("image19").style.display = "none"  
+        }
+        const showo1 = () => {
+            document.getElementById("image16").style.display = "none"
+            document.getElementById("image17").style.display = "block"
+            document.getElementById("image18").style.display = "none"
+            document.getElementById("image19").style.display = "none"  
+        }
+        const showo2 = () => {
+            document.getElementById("image16").style.display = "none"
+            document.getElementById("image17").style.display = "none"
+            document.getElementById("image18").style.display = "block"
+            document.getElementById("image19").style.display = "none"  
+        }
+        const showo3 = () => {
+            document.getElementById("image16").style.display = "none"
+            document.getElementById("image17").style.display = "none"
+            document.getElementById("image18").style.display = "none"
+            document.getElementById("image19").style.display = "block"  
+        }
+    </script>
+
+</body>
+
+</html>

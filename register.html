@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin:0;
+            padding:0;
+            font-family: sans-serif;
+            background: url(/images/resturant11.jpg);
+            background-size: cover;
+        }
+        .box{
+            width: 100px;
+            padding: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: rgba(0,0,0,0,4);
+            text-align: center;
+        }
+        .box h1{
+            color: white;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .box input[type="text"], .box input[type="email"], .box input[type="password"]
+        {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 3px solid #0367fd;
+            padding: 14px 10px;
+            width: 220px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25px;
+        }
+        .box input[type="text"]:focus, .box input[type="password"]:focus, .box input[type="email"]:focus
+        {
+            width: 270px;
+            border-color: orange;
+        }
+        .box input[type="submit"]
+        {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 3px solid orange;
+            padding: 14px 35px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25px;
+            cursor: pointer;
+
+        }
+        .box input[type="submit"]:hover
+        {
+            background: orchid;
+        }
+        a{
+            color: aqua;
+            clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+        }
+        #backbutton{
+   
+   display: inline-block;
+border-radius: 4px;
+background-color: rgb(0, 0, 0,0);
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 8px;
+width: 120px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+   
+}
+
+#backbutton span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+#backbutton span:after {
+content: '<<';
+position: relative;
+opacity: 0;
+top: 0;
+right: -80px;
+transition: 0.5s;
+}
+
+#backbutton:hover span {
+padding-right: 25px;
+}
+
+#backbutton:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+    </style>
+</head>
+<button id="backbutton" style="vertical-align:middle">
+    <a href="index.html"><span>Back</span></a></button>
+<body>
+  
+   
+    <form class="box" action="register.html" method="post">
+
+        <h1>Register</h1>
+        <input type="text" name="" placeholder="Enter username" autocomplete="off" id="username" required>
+        <input type="email" name="" placeholder="Enter email" autocomplete="off" id="email" required>
+        <input type="password" name="" placeholder="Enter password" autocomplete="off" id="password" required>
+        <input type="submit" name="" value="register">
+        <a href="login.html">Already have account <strong>Login</strong></a>
+    </form>
+    <script>
+        
+    </script>
+</body>
+</html>
