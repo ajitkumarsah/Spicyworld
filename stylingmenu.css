@@ -1,0 +1,125 @@
+
+        * {
+            margin: 0;
+        }
+
+        /* Set display to none for image */
+       
+        #image, #image1,  #image2,  #image3,  #image4,  #image5,
+        #image6,  #image7, #image8,
+        #image9,  #image10,  #image11, #image12,  #image13,  #image14,
+        #image15,  #image16,  #image17,  #image18,
+        #image19 {
+            display: none;
+        }
+        h1{
+            /* text-align: center; */
+            text-decoration: underline;
+            color: rebeccapurple;
+        }
+        nav {
+            margin: 0 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: aqua;
+        }
+        nav a{
+            padding: 10px;
+        }
+
+        .main {
+            background-color: orange;
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 10px;
+        }
+
+        #inner-box {
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+        #inner-box button{
+           display: none;
+
+        }
+
+        .box {
+            border: 5px black solid;
+            border-radius: 15px;
+            padding: 80px;
+            background-color: peachpuff;
+        }
+
+        .main img {
+            max-width: 180px;
+        }
+
+        button {
+            background-color: teal;
+            margin-top: 10px;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        #btn {
+            background-color: white;
+            color: black;
+            font-size: 1rem;
+        }
+
+        #footer-image {
+            height: 350px;
+            width: 100%;
+            object-fit: cover;
+            background-repeat: no-repeat
+        }
+
+        #btn1,
+        #btn2,
+        #btn3,
+        #btn4,
+        #btn5,
+        #btn6,
+        #btn7,
+        #btn8,
+        #btn9,
+        #btn10,
+        #btn11, #btn12,
+        #btn13,#btn14,#btn15,#btn16 {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 900px) {
+            .box {
+                padding: 50px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: brown;
+            }
+
+            .box {
+                padding: 50px;
+                margin-bottom: 20px;
+            }
+
+            .main {
+                display: flex;
+                flex-direction: column;
+                margin: 10%;
+                justify-content: space-around;
+                padding-bottom: 10px;
+            }
+        }
+    
